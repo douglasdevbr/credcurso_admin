@@ -93,19 +93,19 @@
             <div class="row">
                 <div class="col-xs-8 p-t-5">
                     <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                    <label for="rememberme" name="remember" {{ old('remember') ? 'checked' : ''}}>Remember Me</label>
+                    <label for="rememberme" name="remember" {{ old('remember') ? 'checked' : ''}}>Me lembre </label>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-block bg-pink waves-effect" type="submit">SIGN IN</button>
+                    <button class="btn btn-block bg-pink waves-effect" type="submit">LOGIN IN</button>
                 </div>
             </div>
 
             <div class="row m-t-15 m-b--20">
                 <div class="col-xs-6">
-                    {{--<a href="sign-up.html">Register Now!</a>--}}
+                    {{--<a href="sign-up.html">Cadastre se !</a>--}}
                 </div>
                 <div class="col-xs-6 align-right">
-                    <a href="{{ url('/password/reset') }}">Forgot Password?</a>
+                    <a href="{{ url('/password/reset') }}">Esqueceu a senha ?</a>
                 </div>
             </div>
 
