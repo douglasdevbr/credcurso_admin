@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-// Route::group(['namespace' => '/'], function () {
+Route::group(['namespace' => 'Admin'], function () {
     Route::get('/dashboard','AdminController@index');
     Route::get('/all-user','AdminController@getAllUser');
     Route::get('/delete-user/{id}','AdminController@deleteUser');
@@ -64,10 +64,10 @@ Route::get('/', function () {
     Route::get('/edit-job-type/{id}','AdminController@editJobTypes');
     Route::get('/delete-job-type/{id}','AdminController@deleteJobTypes');
     Route::post('/update-job-type','AdminController@updateJobType');
+});
 
 
-
-Route::group(['namespace' => '/','prefix'=>'recruiter'], function () {
+Route::group(['namespace' => 'Admin','prefix'=>'recruiter'], function () {
     Route::get('/all-recruiter','ManageRecruiterController@getAllRecruiter');
     Route::get('/view-details/{id}','ManageRecruiterController@recruiterViewDetails');
     Route::get('/posted-jobs/{id}','ManageRecruiterController@recruiterPostedJobs');
@@ -76,7 +76,7 @@ Route::group(['namespace' => '/','prefix'=>'recruiter'], function () {
     Route::post('/notify-selected-reruiters','ManageRecruiterController@notifSelectedReruiters');
 });
 
-Route::group(['namespace' => '/','prefix'=>'seeker'], function () {
+Route::group(['namespace' => 'Admin','prefix'=>'seeker'], function () {
     Route::get('/send-notification','ManageSeekerController@seekerSendNotification');
     Route::post('/notify-selected-seekers','ManageSeekerController@notifSelectedSeeker');
 });
