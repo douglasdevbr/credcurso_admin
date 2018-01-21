@@ -167,7 +167,7 @@ class RecruiterRepository
                 $seeker = SeekerModel::all()->toArray();
                 foreach ($seeker as  $value) 
                 {   
-                    $title='Job Portal';
+                    $title='DigitalBank';
                     $body='New Job Available';
                     $device_token= $value['device_token'];
                     $notify = $this->firebase_notification($device_token,$title,$body);

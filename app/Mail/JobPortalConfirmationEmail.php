@@ -30,6 +30,6 @@ class JobPortalConfirmationEmail extends Mailable
      */
     public function build()
     {
-        return $this->from('support@himanshusofttech.com' , 'Job Portal')->view('vendor.emails.verifyseeker');
+        return $this->from('support@himanshusofttech.com' , 'DigitalBank')->view('vendor.emails.verifyseeker');
     }
 }

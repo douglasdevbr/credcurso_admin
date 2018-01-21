@@ -106,7 +106,7 @@
         <!-- Footer -->
         <div class="legal">
             <div class="copyright">
-                &copy; 2017 <a href="javascript:void(0);">JOB PORTAL</a>.
+                &copy; 2017 <a href="javascript:void(0);">DigitalBank</a>.
             </div>
         </div>
         <!-- #Footer -->

@@ -189,7 +189,7 @@ class SeekerRepository
                 $model->insert($data);
                 $recruiter = JobsModel::find($data['job_id'])->postedRecruiter;
                     if($recruiter->device_type != null){
-                        $title = 'Job Portal';
+                        $title = 'DigitalBank';
                         $body = trim(Lang::get('recruiter.recruiter-notify.applied-on-job'));
                         $notify = $this->firebase_notification($recruiter->device_token,$title,$body);
                     }

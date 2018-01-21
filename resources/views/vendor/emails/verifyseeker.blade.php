@@ -58,7 +58,7 @@ $style = [
                 <tr>
                     <td style="{{ $style['email-masthead'] }}" bgcolor="#1c202b">
                         <a style="{{ $fontFamily }} {{ $style['email-masthead_name'] }}" href="#" target="_blank">
-                          Job Portal
+                          DigitalBank
                             {{--<img src="{{ URL::asset('public/images/logo.png') }}">--}}
                         </a>
                     </td>
@@ -132,7 +132,7 @@ $style = [
                                 <td style="{{ $fontFamily }} {{ $style['email-footer_cell'] }}">
                                     <p style="{{ $style['paragraph-sub'] }}">
                                         &copy; {{ date('Y') }}
-                                        <a style="{{ $style['anchor'] }}" href="{{ url('/') }}" target="_blank">Job Portal</a>.
+                                        <a style="{{ $style['anchor'] }}" href="{{ url('/') }}" target="_blank">DigitalBank</a>.
                                         All rights reserved.
                                     </p>
                                 </td>

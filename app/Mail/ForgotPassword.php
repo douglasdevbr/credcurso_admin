@@ -31,7 +31,7 @@ class ForgotPassword extends Mailable
      */
         public function build()
     {
-        return $this->from('support@himanshusofttech.com' , 'Job Portal')->view('vendor.emails.forgotpassword')->subject( 'Job Portal Forgot Password' );
+        return $this->from('support@himanshusofttech.com' , 'DigitalBank')->view('vendor.emails.forgotpassword')->subject( 'DigitalBank Forgot Password' );
     }
 
 }

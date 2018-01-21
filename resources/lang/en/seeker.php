@@ -3,7 +3,7 @@
 return [
 
     'register-succees' => 'Verification link has been send to your registered email id, please click on link for successful registration.',
-    'register-confirm' => 'Now you are confirmed You can login from to Job Portal.',
+    'register-confirm' => 'Now you are confirmed You can login from to DigitalBank.',
     'seeker-not-register' => 'Seeker not registered.',
     'seeker-not-verified' => 'Seeker not verified, please verify from the link sent to your email id',
     'seeker-password' => 'You entered wrong password.',
