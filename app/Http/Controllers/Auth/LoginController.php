@@ -43,31 +43,31 @@ class LoginController extends Controller
     }
 
 
-//    protected function validateLogin(Request $request)
-//    {
-//        $this->validate($request, [$this->username() => 'required', 'password' => 'required',]);
-//    }
-//
-//    public function login(Request $request)
-//    {
-//        $this->validateLogin($request);
-//        $user = User::whereEmail($request->email)->first();
-//        $userVerified = User::select('verified')->whereEmail($request->email)->first();
-//        if (!$user) {
-//            return redirect('login')->withErrors(['mailnotexist' => Lang::get('auth.mailError')]);
-//        }
-//        if ($userVerified->verified == false) {
-//            return redirect('login')->withErrors(['notverify' => Lang::get('auth.verifyerror')]);
-//        }
-//        if ($this->hasTooManyLoginAttempts($request)) {
-//            $this->fireLockoutEvent($request);
-//            return $this->sendLockoutResponse($request);
-//        }
-//        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'verified' => 1])) {
-//            // Authentication passed...
-//            return redirect()->intended('user-dashboard');
-//        } else {
-//            return redirect('login')->withErrors(['invalid' => Lang::get('auth.failed')]);
-//        }
-//    }
+   protected function validateLogin(Request $request)
+   {
+       $this->validate($request, [$this->username() => 'required', 'password' => 'required',]);
+   }
+
+   public function login(Request $request)
+   {
+       $this->validateLogin($request);
+       $user = User::whereEmail($request->email)->first();
+       $userVerified = User::select('verified')->whereEmail($request->email)->first();
+       if (!$user) {
+           return redirect('login')->withErrors(['mailnotexist' => Lang::get('auth.mailError')]);
+       }
+       if ($userVerified->verified == false) {
+           return redirect('login')->withErrors(['notverify' => Lang::get('auth.verifyerror')]);
+       }
+       if ($this->hasTooManyLoginAttempts($request)) {
+           $this->fireLockoutEvent($request);
+           return $this->sendLockoutResponse($request);
+       }
+       if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'verified' => 1])) {
+           // Authentication passed...
+           return redirect()->intended('user-dashboard');
+       } else {
+           return redirect('login')->withErrors(['invalid' => Lang::get('auth.failed')]);
+       }
+   }
 }
