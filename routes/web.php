@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::group(['namespace' => '/'], function () {
+// Route::group(['namespace' => '/'], function () {
     Route::get('/dashboard','AdminController@index');
     Route::get('/all-user','AdminController@getAllUser');
     Route::get('/delete-user/{id}','AdminController@deleteUser');
@@ -64,7 +64,7 @@ Route::group(['namespace' => '/'], function () {
     Route::get('/edit-job-type/{id}','AdminController@editJobTypes');
     Route::get('/delete-job-type/{id}','AdminController@deleteJobTypes');
     Route::post('/update-job-type','AdminController@updateJobType');
-});
+
 
 
 Route::group(['namespace' => '/','prefix'=>'recruiter'], function () {
