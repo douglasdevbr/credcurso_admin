@@ -12,12 +12,12 @@
                 <li class="{{(isset($page) && $page && $page=='recruiter')?'active':''}}">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">record_voice_over</i>
-                        <span>Recruiters</span>
+                        <span>Alunos</span>
                     </a>
                     <ul class="ml-menu">
                         <li class="{{(isset($sub_page) && $sub_page && $sub_page=='all-recruiter')?'active':''}}">
                             <a href="{{ url('/recruiter/all-recruiter') }}">
-                                All Recruiters
+                                Todos os Alunos
                             </a>
 
                         </li>
@@ -26,21 +26,21 @@
                 <li class="{{(isset($page) && $page && $page=='user')?'active':''}}">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">person_add</i>
-                        <span>Seekers</span>
+                        <span>Pré aprovaçãp </span>
                     </a>
                     <ul class="ml-menu">
                         <li class="{{(isset($sub_page) && $sub_page && $sub_page=='all-user')?'active':''}}">
-                            <a href="{{ url('/all-user')  }}">All Seekers</a>
+                            <a href="{{ url('/all-user')  }}"> Todos pré aprovação </a>
                         </li>
                     </ul>
                 </li>
                 <li class="{{(isset($page) && $page && $page=='location')?'active':''}}">
                     <a href="{{url('/location')}}">
                         <i class="material-icons">map</i>
-                        <span>Locations</span>
+                        <span>Vagas</span>
                     </a>
                 </li>
-                <li class="{{(isset($page) && $page && $page=='area-of-sectors')?'active':''}}">
+                <!-- <li class="{{(isset($page) && $page && $page=='area-of-sectors')?'active':''}}">
                     <a href="{{url('/area-of-sectors')}}">
                         <i class="material-icons">business</i>
                         <span>Area of Sectors</span>
@@ -90,11 +90,11 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li> -->
                 <a href="{{ url('/logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
                         <i class="material-icons">input</i>
-                        <span>Sign Out</span>
+                        <span>Sair </span>
                     </a>
                 </li>
                 <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -106,7 +106,7 @@
         <!-- Footer -->
         <div class="legal">
             <div class="copyright">
-                &copy; 2017 <a href="javascript:void(0);">DigitalBank</a>.
+                &copy; 2017 <a href="javascript:void(0);">DigitalBank - Protótipo</a>.
             </div>
         </div>
         <!-- #Footer -->
