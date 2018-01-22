@@ -43,7 +43,7 @@ class LoginController extends Controller
     }
 
 
-   protected function validateLogin(Request $request)
+   /* protected function validateLogin(Request $request)
    {
        $this->validate($request, [$this->username() => 'required', 'password' => 'required',]);
    }
@@ -69,5 +69,5 @@ class LoginController extends Controller
        } else {
            return redirect('login')->withErrors(['invalid' => Lang::get('auth.failed')]);
        }
-   }
+   } */
 }
