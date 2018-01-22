@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <!-- Call Search -->
-                <li><a class="navbar-brand" target="_blank" href="http://jobportal.kamleshyadav.net/">View Site</a></li>
+
                 <!-- #END# Call Search -->
             </ul>
         </div>

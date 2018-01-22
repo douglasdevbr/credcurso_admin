@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'failed' => 'User Email Address and Password does\'t match.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.!',
-    'mailError' => 'Email You Entered is not registered with Us!',
-    'verifyerror' => 'We Have send You Email Verification link to your Email Address Please verify and Login!'
+    'failed' => 'Usuário ou senha estão inválidos',
+    'throttle' => 'Muitas tentativas de fazer login!',
+    'mailError' => 'Esse email não esta registrado!',
+    'verifyerror' => 'Nos enviamos um email com link de verificação,  por favor abra-o e confirme.'
     //'invalidError' => 'Please enter valid Password!'
 ];

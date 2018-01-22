@@ -26,7 +26,7 @@
                 <li class="{{(isset($page) && $page && $page=='user')?'active':''}}">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">person_add</i>
-                        <span>Pré aprovaçãp </span>
+                        <span>Pré aprovação </span>
                     </a>
                     <ul class="ml-menu">
                         <li class="{{(isset($sub_page) && $sub_page && $sub_page=='all-user')?'active':''}}">
